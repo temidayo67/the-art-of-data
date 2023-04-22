@@ -53,13 +53,13 @@ def count_no_of_lines_and_words(filename):
 
 results = count_no_of_lines_and_words('test2.txt')
 print(results)
-donald_result = count_no_of_lines_and_words("C:\\Users\\hp\\Desktop\\folder\\donald_speech.txt")
+donald_result = count_no_of_lines_and_words("donald_speech.txt")
 print(donald_result)
-melina_result = count_no_of_lines_and_words("C:\\Users\\hp\\Desktop\\folder\\melina_trump_speech.txt")
+melina_result = count_no_of_lines_and_words("melina_trump_speech.txt")
 print(melina_result)
-michelle_result = count_no_of_lines_and_words("C:\\Users\\hp\\Desktop\\folder\\michelle_obama_speech.txt")
+michelle_result = count_no_of_lines_and_words("michelle_obama_speech.txt")
 print(michelle_result)
-obama_result = count_no_of_lines_and_words("C:\\Users\\hp\\Desktop\\folder\\obama_speech.txt")
+obama_result = count_no_of_lines_and_words("obama_speech.txt")
 print(obama_result)
 
 import re
@@ -70,7 +70,7 @@ def open_file(file):
     with open(file,'r') as emails:
         file_contents = emails.read()
     return file_contents
-contents = open_file("C:\\Users\\hp\\Desktop\\folder\\email_exchanges.txt")
+contents = open_file("email_exchanges.txt")
 all_emails = extract_emails(contents)
 incoming_emails = [email for email in all_emails if email.split('@')[1] not in ['postmaster@collab.sakaiproject.org',
                    'source@collab.sakaiproject.org']]
